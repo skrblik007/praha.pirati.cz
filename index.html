@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<br>
+
+<div class="row">
+
+  <div class="medium-6 columns">
+    <div class="orbit-container">
+      <a href="http://mup.pirati.cz" style="color: white;">
+        <img class="orbit-image" src="{{"/assets/img/layout/banner-metroplan.png" }}" alt="main article image">
+        <figcaption class="orbit-caption">
+          <span style="font-weight: 900; font-variant: small-caps; font-size: 120%;">
+              Piráti zveřejnili metropolitní plán
+          </span>
+        </figcaption>
+      </a>
+    </div>
+  </div>
+
+  <div class="medium-3 columns">
+    <p>
+      <a href="{{"/mestske-casti/" }}">
+        <img src="{{"/assets/img/layout/old/mestske-casti.png" }}" alt="Mapa">
+      </a>
+    </p>
+    <p>
+      <a href="{{"/lide/" }}">
+        <img src="{{"/assets/img/layout/old/tym.jpg" }}" alt="Hledáme posily">
+      </a>
+    </p>
+  </div>
+
+  <div class="medium-3 columns">
+    <p>
+      <a href="http://www.piratskelisty.cz">
+        <img src="{{"/assets/img/layout/old/plisty.png" }}" alt="Pirátské listy">
+      </a>
+    </p>
+    <p>
+      <a href="{{"/o-nas/#projekty" }}">
+        <img src="{{"/assets/img/layout/old/projekty.png" }}" alt="Projekty">
+      </a>
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <!-- AKTUALITY -->
+  <div class="large-7 columns" style="border-right: 1px solid #E3E5E8;">
+    <h2 class="show-for-small-only">Aktuality</h2>
+    <article>
+      {% for post in site.posts limit: 4 %}
+      <div class="row">
+        <div class="large-6 columns">
+          <p>
+            <img src="{{ post.image | prepend: "/assets/img/posts/" }}" alt="{{ post.title }}">
+          </p>
+          <p>
+            <span><i class="fi-calendar">&nbsp;{{ post.date | date: "%d.%m.%Y" }}&nbsp;&nbsp;</i></span>
+            <span><i class="fi-torso">&nbsp;{{ post.author }}&nbsp;</i></span>
+          </p>
+        </div>
+        <div class="large-6 columns">
+          <h5><a href="{{ post.url  }}">{{ post.title }}</a></h5>
+          <p>
+            {{ post.excerpt | truncatewords: 33 }}
+            <a href="{{ post.url  }}">více</a>.
+          </p>
+        </div>
+      </div>
+      <hr> {% endfor %}
+      <a href="{{"/blog/"  }}" class="button">Další články</a>
+    </article>
+  </div>
+  <!-- /AKTUALITY -->
+
+  <div class="large-5 columns">
+    <aside>
+      <div class="row column">
+        <h2 class="show-for-small-only">Kalendář</h2>
+        <iframe src="{{ site.title_page.calendar.title }}" style="border-width:0" width="100%" height="410" frameborder="0" scrolling="no"></iframe>
+        <p>Více <a href="{{"/kalendar/"  }}">událostí</a> naleznete na samostatné stránce.</p>
+      </div>
+
+      <br>
+
+      <div class="row column">
+        <p class="lead">Lidé</p>
+        {% assign sorted_people = site.people | sort:"order" %}
+        {% for person in sorted_people limit:3 %}
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src="{{person.img | prepend: "/assets/img/people/"  }}" style="width: 80px">
+          </div>
+          <div class="media-object-section">
+            <h5><a href="{{person.url}}">{{ person.name }}</a></h5>
+            <p>{{ person.description | truncate: 130 }}</p>
+          </div>
+        </div>
+        {% endfor %}
+
+        <p>Poznej celý <a href="{{"/lide/"  }}">náš tým</a>!</p>
+
+        <br>
+
+        <div class="row column">
+          <p class="lead">Video</p>
+          <iframe width="400" height="225" src="{{ site.title_page.video }}" frameborder="0" allowfullscreen></iframe>
+          <p>Další videa nalezenete na našem <a href="https://www.youtube.com/user/CeskaPiratskaStrana">youtube kanále</a>.</p>
+        </div>
+      </div>
+    </aside>
+  </div>

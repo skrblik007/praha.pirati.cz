@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{% assign sorted_people = (site.people | sort:"order") %}
+
+<div class="row">
+  <div class="large-5 columns">
+    <div class="row" style="width: 550px;">
+      <div class="large-12 column">
+        {% if page.name == 'index.html' %}
+        <!-- Carousel / Orbit -->
+        <div class="orbit" role="region" aria-label="Náš tým" data-orbit style="width: 450px;">
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Předchozí</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Další</span>&#9654;&#xFE0E;</button>
+            {% for person in sorted_people %}
+              <li class="orbit-slide{% if forloop.first %} is-active{% endif %}">
+                <a href="{{person.url}}">
+                  <img class="orbit-image" src="{{person.img | prepend: "/assets/img/people/"  }}" alt="{{person.name}}">
+                  <figcaption class="orbit-caption">{{person.name}}</figcaption>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- end Carousel / Orbit -->
+        {% else %}
+        <img src="{{page.img | prepend: "/assets/img/people/"  }}" alt="{{page.name}}">
+        {% endif %}
+      </div>
+    </div>
+    {% for person in sorted_people %}
+    <div class="row" {% if page.url == person.url %}style="background:yellow;"{% endif %}>
+      <a href="{{person.url  }}" style="text-decoration: none; color: black;">
+        <div class="large-3 column">
+              <img src="{{person.img | prepend: "/assets/img/people/"  }}" alt="{{page.name}}" style="width: 90px;">
+        </div>
+        <div class="large-9 column">
+          <h5>{{person.name}}</h5>
+          <p><small>{{person.description | truncate: 110}}</small></p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="large-7 columns">
+      {% if page.name != 'index.html' %}
+      <br>
+
+      <h1>{{page.name}}</h1>
+
+      <h5>{{page.description}}</h5>
+      {% endif %}
+
+      <br>
+
+      {{ content }}
+
+      {% if page.name != 'index.html' %}
+
+      <hr>
+
+      <p>Kontakty:
+        {% if page.telefon %}{{ page.telefon }},{% endif %}
+        {% if page.mail %}{{ page.mail }}{% endif %}
+      </p>
+      <p>Sociální sítě:
+         {% if page.facebook %}<a href="{{page.facebook}}">Facebook</a>,{% endif %}
+         {% if page.twitter %}<a href="{{page.twitter}}">Twitter</a>,{% endif %}
+         {% if page.github %}<a href="{{page.github}}">Github</a>{% endif %}
+     </p>
+     <p>Další informace:
+         {% if page.priznani %}<a href="{{page.priznani}}">majetkové přiznání</a>,{% endif %}
+         {% if page.vykaz %}<a href="{{page.vykaz}}">výkaz práce</a>.{% endif %}
+         </p>
+
+      <hr>
+
+      <h3>Napsal:</h3>
+
+      <ul class="posts">
+      {% for post in site.posts %}
+          {% if post.author contains page.name %}
+              <li><span>{{ post.date | date: "%-d. %-m. %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endif %}
+      {% endfor %}
+      </ul>
+      {% endif %}
+  </div>
+</div>

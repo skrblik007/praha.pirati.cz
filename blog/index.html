@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<br>
+
+<div class="row" style="min-height: 550px;">
+  <div class="columns large-7">
+    {% for post in paginator.posts limit: 1 %}
+    <div class="column">
+      <div>
+        <img src="{{ post.image | prepend: "/assets/img/posts/" }}"
+          class="thumbnail"
+          alt="{{ post.title }}">
+        <h3><a href="{{ post.url  }}">{{ post.title }}</a></h3>
+        <p>
+          <span><i class="fi-calendar">&nbsp;{{ post.date | date: "%d.%m.%Y" }}&nbsp;&nbsp;</i></span>
+          <span><i class="fi-torso">&nbsp;{{ post.author }}&nbsp;</i></span>
+        </p>
+        <p>
+          {{ post.excerpt | truncatewords: 34 }}
+          <a href="{{ post.url  }}">více</a>.
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="columns large-5">
+    <form method="get" action="https://www.google.com/search">
+      <div class="input-group">
+        <input type="text" name="q" size="25" maxlength="255" value="" placeholder="Hledej na pirati.praha.cz" class="input-group-field" />
+        <div class="input-group-button">
+          <input type="submit" value="Hledej" class="button" />
+        </div>
+      </div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true" class="hide">
+        <input type="checkbox"  name="sitesearch" value="praha.pirati.cz" checked />
+      </div>
+    </form>
+
+    <hr>
+
+    <div class="fb-page" data-href="https://www.facebook.com/CeskaPiratskaStranaPraha/" data-tabs="timeline" data-width="500" data-height="550" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/CeskaPiratskaStranaPraha/">
+          <a href="https://www.facebook.com/CeskaPiratskaStranaPraha/">
+            Najdete nás na Facebooku:<br>
+            Česká pirátská strana - Praha</a>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="row" style="min-height: 550px;">
+  <div class="columns large-7">
+    {% for post in paginator.posts offset: 1 limit: 1 %}
+    <div class="column">
+      <div>
+        <img src="{{ post.image | prepend: "/assets/img/posts/" }}"
+          class="thumbnail"
+          alt="{{ post.title }}">
+        <h3><a href="{{ post.url  }}">{{ post.title }}</a></h3>
+        <p>
+          <span><i class="fi-calendar">&nbsp;{{ post.date | date: "%d.%m.%Y" }}&nbsp;&nbsp;</i></span>
+          <span><i class="fi-torso">&nbsp;{{ post.author }}&nbsp;</i></span>
+        </p>
+        <p>
+          {{ post.excerpt | truncatewords: 34 }}
+          <a href="{{ post.url  }}">více</a>.
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="columns large-5">
+    <div>
+      <a class="twitter-timeline" href="https://twitter.com/piratipraha" data-widget-id="714948434621513728">Tweets by @piratipraha</a>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="columns large-12">
+    <article class="row small-up-2">
+      {% for post in paginator.posts offset: 2 %}
+      <div class="column">
+        <div style="min-height: 500px;">
+          <img src="{{ post.image | prepend: "/assets/img/posts/" }}"
+            class="thumbnail"
+            alt="{{ post.title }}">
+          <h3><a href="{{ post.url  }}">{{ post.title }}</a></h3>
+          <p>
+            <span><i class="fi-calendar">&nbsp;{{ post.date | date: "%d.%m.%Y" }}&nbsp;&nbsp;</i></span>
+            <span><i class="fi-torso">&nbsp;{{ post.author }}&nbsp;</i></span>
+          </p>
+          <p>
+            {{ post.excerpt | truncatewords: 34 }}
+            <a href="{{ post.url  }}">více</a>.
+          </p>
+        </div>
+        <hr>
+      </div>
+      {% endfor %}
+    </article>
+  </div>
+</div>
+
+<!-- Stránkování / pagination -->
+<div class="row">
+  <div class="large-12 text-center">
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      <li>
+        <a href="{{ paginator.previous_page_path }}" aria-label="Previous page">
+        Předchozí <span class="show-for-sr">page</span>
+      </a>
+      </li>
+      {% for page in (1..paginator.total_pages) %}
+      <li>
+        {% if forloop.index == 1 %}
+        <a href="/blog/" aria-label="Page {{ forloop.index }}" {% if page == paginator.page %} class="current" {% endif %}>
+      {% else %}
+        <a href="/blog/{{forloop.index}}/" aria-label="Page {{ forloop.index }}"{% if page == paginator.page %} class="current"{% endif %}>
+      {% endif %}
+        {{ forloop.index }}
+      </a>
+      </li>
+      {% endfor %}
+      <li>
+        <a href="{{ paginator.next_page_path }}" aria-label="Next page">
+        Další <span class="show-for-sr">page</span>
+      </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- / Stránkování / pagination -->
+
+<br />

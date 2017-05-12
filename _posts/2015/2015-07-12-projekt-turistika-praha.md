@@ -1,0 +1,31 @@
+---
+title:	Projekt turistika v Praze
+layout:	post
+category:	blog
+author:	Alexandra Herzog
+image:	staromak.jpg
+tags:	Praha
+date:	2015-07-12
+---
+
+Jmenuji se Alexandra Herzog a jsem americkou studentkou působící momentálně v zahraničí. Rozhodla jsem se strávit své letní vyučování na Anglo-americké univerzitě v Praze, a to jako stážistka v České pirátské straně. Oficiálně jsem "asistentem pro politické záležitosti". Mým prvním projektem bylo pomoci Pirátům získat více informací ohledně pražské turistiky. Vzhledem k tomu, že turistický ruch představuje jedno z významných odvětví českého hospodářství, je jeho zlepšení důležitým politickým tématem. Ve snaze analyzovat toto téma efektivněji jsem se rozhodla svojí zprávu rozdělit na dvě části. Nejprve jsem shromáždila své vlastní zkušenosti z Prahy (kde zatím trávím přesně jeden měsíc). Poté jsem uskutečnila několik rozhovorů s turisty. Cílem bylo zjistit něco o jejich zkušenostech s návštěvou Prahy.
+
+Aby bylo možné získat co nejvíce hodnotných informací, tak jsem připravila speciální formulář, který poté vyplnila řada návštěvníků Prahy, přesněji ti, které bylo možné zastihnout na Staroměstském náměstí a Karlově mostě. Navíc byl formulář k dispozici také online, což napomohlo k získání více odpovědí. Celkem se jich sešlo třicet.
+
+V tomto směru jsem uplatnila zkušenosti z dvou předchozích letních aktivit, kde jsem pracovala v kampani pro zvolení okresního tajemníka. Mým cílem tehdy bylo získat co nejvíce podpisů během jednoho dne tak, aby můj kandidát v primárkách uspěl. Myslím, že díky této zkušenosti se mi podařilo lidi oslovit efektivně, bez jakýchkoliv nedorozumění, nebo komplikací.
+
+Oproti předchozím zkušenostem se však tentokrát jednalo o něco jiného. V cizí zemi totiž ne každý umí anglicky. Řada lidí, které jsem chtěla oslovit, tak měla s komunikací problémy. Navíc vyplnit formulář není tak jednoduché jako podepsat petici, a tak se nakonec spousta lidí zapojit do průzkumu ani nechtěla. Sbíráním odpovědí k těmto formulářům jsem strávila spoustu času, příliš mě to netěšilo, neboť mě nebaví otravovat lidí, kteří nemají očividně zájem se mi věnovat. I přesto však v řadě případů formuláře vyplněny byly a mně se při tom podařilo se setkat s lidmi z celého svata. Dokonce jsem jim mohla dát i nějaké rady a doporučení co vidět a navštívit v Praze.
+
+Celkově vzato se zdá, že turisté jsou v Praze spokojeni. Praha udělala spoustu věcí dobře: Měla by i nadále pokračovat s propagací klubů a hospodské zábavy, udržovat město čisté, pořádat prohlídky s průvodci v různých jazycích, pořádat mezinárodní akce, podporovat dobré univerzity (aby se studenti učili v Praze) a nabídnout "unikátní" české zážitky (představení, ochutnávky piva aj). Na druhou stranu věřím, že by turisté ocenili, kdyby byly různé nápisy v angličtině běžnější a místní obyvatelstvo přátelštější (předevší v restauracích); kdyby byli turisté méně často obíráni místními podniky (restaurace a taxislužby) a zjednodušila se orientace pro cizince (více map na ulicích). 
+
+Další část mého výzkumu spočívala na mých vlastních zkušenostech s Prahou. Navštívila jsem pražské turistické centrum, kde si nechala poradit ohledně návštěvy určitého místa v Praze. Pokusila jsem se zjistit, jak dobře tam cizincům pomáhají. Velmi ochotně mi poradili najít správnou cestu k hlavním atrakcím, ale některé informace, které se týkaly cesty na letiště, se ukázaly být jako nesprávné. Cestu jsem zjistila díky online službám a informacím ve veřejné dopravě, ale i tak to pro mne nebylo jednoduché. Myslím si, že webové stránky letiště, veřejné dopravy a turistického centra Prahy, by měly jasně informovat cizince o tom, jak se dostat na letiště. Potíže s cestou jsem měla takové, že nyní už mohu rozumnět tomu, proč se tam většina lidí rozhodne cestovat na individuální dopravou. 
+
+Weby města, které jsou určeny pro cizince, jsou dobře použitelné. Vyzkoušela jsem stránku o Praze na portálu WikiTravel a pražského turistického centra a na obou z nich se nacházely informace o současných událostech, dopravě a slevách v restauracích, o kterých bych se jinak nemohla dozvědět. Jenže jednu věc neuvádějí správně - a to, že angličtinu v Praze lidé ovládají. Jako turista jsem proto očekávala, že ze strany místních bude jejich angličtina skvělá a skutečnost, že mnozí tento jazyk neznají, pro mně byla nepříjemným probuzením. Dále webové stránky varují ohledně směnných kurzů, nezmiňují ale hlavní nádraží, neboť právě tam jsou turisté okrádáni. Jeden z mých přátel, který mně navštívil z Německa, si vyměnil 70 € na ekvivalent padesáti eur v českých korunách. Vzhledem k tomu, že na nádraží přijíždí nemálo turistů, měli by být informováni o tom, že si tam nemají směňovat peníze. 
+
+Česká pirátská strana se opravdu chce soustředit na zlepšování veřejné dopravy v tom směru, aby ji využívalo více turistů. Podle mého výzkumu tak činí zhruba polovina (53 %) návštěvníků, kteří přijedou do Prahy. Jako student, který přes léto žije v Praze, využívám veřejnou dopravu každý den. Především jezdím metrem, které je velmi praktické. To však na druhou stranu není jako takové bezpečné pro starší lidi; některé stanice nemají výtahy nebo rampy a eskalátory se pohybují velice rychle. Můj spolubydlící dokonce viděl pád starší ženy z eskalátoru ve stanici Flora. Pohyblivé schody totiž jely příliš rychle a ona ztratila rovnováhu. Mně se velmi těžko orientovalo v tramvajové dopravě; myslím si, že schémata tramvajových linek by měla být umístěna na více zastávkách, takže by se lidé lépe v dopravě vyznali.
+
+Celkově vzato jsem byla ráda, že mi byl přidělen tento úkol. Zjistila jsem toho o systému veřejné dopravy v Praze mnohé; dále jsem se dozvěděla o tom, že různí lidé získávají v tom stejném městě diametrálně odlišné zkušenosti. Věřím tomu, že výsledky, které měla moje činnost, pomohou České pirátské straně navrhnout nová rozhodnutí v oblasti turistiky a veřejné dopravy. Z toho, že jsem se na tomto procesu mohla podílet, pro mně plynulo značné nadšení. Jsem také vděčná za to, že se mi naskytla příležitost úzce spolupracovat s lidmi, kteří chtějí případné změny v Praze uskutečnit. 
+
+*Tento článek byl přeložen z anglického [originálu](/assets/docx/alex.docx) originálu* 
+
+

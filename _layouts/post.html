@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="row" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title text-center" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta text-center">
+      Vydáno:
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d. %-m. %Y" }}</time>
+      {% if page.author %} • Autoři:
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %} •
+      {% if page.tags %}
+      <span>Tagy: {% for tag in page.tags %}<a href="{{ tag | prepend: '/tags/#'  }}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div itemprop="articleBody">
+    <img src="{{ page.image | prepend: "/assets/img/posts/" }}"
+      alt="{{ page.title }}" class="float-right thumbnail" style="margin: 10px;">
+    {% if page.now %}<span class="label alert">Aktualizováno</span> {{page.now}}{% endif %}
+    {{ content }}
+  </div>
+
+</article>
+
+
+<hr>
+
+<div class="row">
+    <div class="large-3 large-offset-2 columns">
+      <p><i class="fi-heart"></i> Sdílení je aktem lásky:</p>
+    </div>
+    <div class="large-1 columns">
+      <p><a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text={{ "Piráti Praha: " | cgi_escape}}{{ page.title | cgi_escape}}">
+      Tweet</a></p>
+    </div>
+    <div class="large-3 columns">
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+    </div>
+    <div class="large-3 columns text-right show-for-medium-up">
+     <small>
+      <a href="https://github.com/pirati-web/praha.pirati.cz/edit/gh-pages/{{ page.path }}" style="color:#888888">Navrhni úpravu</a>
+     </small>
+    </div>
+</div>
+
+<br>

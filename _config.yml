@@ -1,0 +1,65 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Piráti Praha
+email: ondrej.profant@pirati.cz
+description: > # this means to ignore newlines until "baseurl:"
+    Piráti Praha jsou krajské sdružení Pirátské strany v Praze. Klub Pirátů v zastupitelstvu hl. m. Prahy. Nezávisle kontrolujeme práci vládnoucích politiků. Naši zastupitelé vás informují a hájí!
+baseurl: "" # the subpath of your site, e.g. /blog  http://stackoverflow.com/questions/16316311/github-pages-and-relative-paths/19173888#19173888
+url: "" # the base hostname & protocol for your site
+
+mailchimp:
+  newsletter:
+    action: https://pirati.us9.list-manage.com/subscribe/post?u=7e063d6dffdb0316b906e1351&amp;id=5b1243a65b
+    captcha: b_7e063d6dffdb0316b906e1351_6e2a2eaa42
+  volunters:
+    action: https://pirati.us9.list-manage.com/subscribe/post?u=7e063d6dffdb0316b906e1351&amp;id=88a318620c
+    captcha: b_7e063d6dffdb0316b906e1351_88a318620c
+
+title_page:
+  video: https://www.youtube.com/embed/pWK515EHyG0
+  calendar:
+    title: https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=500&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=rm0h4oqjk2j2o0615sc4d1slfk%40group.calendar.google.com&amp;color=%23B1365F&amp;src=lpvmfpogihrca3lqs9p2udae0k%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Europe%2FPrague
+    praha: https://calendar.google.com/calendar/embed?title=Pir%C3%A1ti%20Praha&amp;showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=rm0h4oqjk2j2o0615sc4d1slfk%40group.calendar.google.com&amp;color=%23B1365F&amp;src=lpvmfpogihrca3lqs9p2udae0k%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Europe%2FPrague
+    magistrat: https://calendar.google.com/calendar/embed?title=Pir%C3%A1ti%20Praha&amp;showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=kq1pscnqlcupnugkhslkc8pn0k%40group.calendar.google.com&amp;color=%23853104&amp;src=ts9cg80rgfblibmmgm45keqcl8%40group.calendar.google.com&amp;color=%23853104&amp;ctz=Europe%2FPrague
+    global: https://calendar.google.com/calendar/embed?title=Pir%C3%A1ti%20Praha&amp;showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=kddvdvu3adcjef2kro4j6mm838%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FPrague
+    pice: https://www.google.com/calendar/embed?showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=evhpcc3i4hgjut142ru0tn7gl0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FPrague
+
+kontakt:
+  map:
+     pice: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.994608957739!2d14.4421077!3d50.0863121!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x317d7c609cbfe9da!2zUGlyw6F0c2vDqSBjZW50cnVtLCBzw61kbG8gxIxlc2vDqSBwaXLDoXRza8OpIHN0cmFueQ!5e0!3m2!1scs!2scz!4v1466169010418
+     magistrat: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9560629751973!2d14.415646715437028!3d50.08710947942682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8cf28b7cb%3A0xd4e6779dafe9259!2zTWFyacOhbnNrw6kgbsOhbS4gMi8yLCAxMTAgMDAgUHJhaGEgMS1TdGFyw6kgTcSbc3Rv!5e0!3m2!1sen!2scz!4v1467889800405
+
+permalink: /:title.html
+collections:
+  people:
+    output: true
+    permalink: /lide/:path/
+  projects:
+    output: true
+    permalink: /pripoj-se/:path/
+
+
+gems:
+  - jekyll-paginate
+paginate_path: "/blog/:num/"
+paginate: 12
+
+# Build settings
+markdown: kramdown
+
+cdn_libs:
+    css:
+      - https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css
+      - https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css
+      - https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css
+    js:
+      - https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js

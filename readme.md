@@ -1,16 +1,8 @@
-# Web Praha
+# Web střední Čechy
 
-Web Pirátů v Praze. Web je zamýšlen pro celé krajské sdružení - zastupitele (magistrát i mč), veřejnost, členy i pracovníky. Běží na adrese: http://praha.pirati.cz
+Web Pirátů ve středních Čechách. Web je zamýšlen pro celé krajské sdružení - veřejnost, členy i pracovníky. Běží na adrese: http://strednicechy.pirati.cz
 
-Pro psaní článků je třeba umět [markdown](https://daringfireball.net/projects/markdown/). Pro zbylé úpravy html a css framework [Foundation 6](http://foundation.zurb.com/). Takže je třeba seznámit se alespoň se základy gitu.
-
-TODO:
-
-- drobné opravy
-- podrobnější stránky s MČ
-- přesunout více dat do configu/ů
-- integrace Disqus
-
+Pro psaní článků je třeba umět [markdown](https://daringfireball.net/projects/markdown/). Pro zbylé úpravy html a css framework [Foundation 6](http://foundation.zurb.com/). Také je třeba seznámit se alespoň se základy gitu.
 
 ## Jak přispívat?
 
